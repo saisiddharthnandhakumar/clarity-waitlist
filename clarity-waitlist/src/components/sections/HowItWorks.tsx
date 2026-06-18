@@ -79,8 +79,10 @@ export function HowItWorks() {
               From photo to progress in{" "}
               <span className="gradient-text">5 steps</span>
             </h2>
-            <p className="text-ink-400 text-lg max-w-xl mx-auto text-balance">
-              It takes less than a minute to get your first skin analysis. Here&apos;s how simple it is.
+            <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
+              From selfie to insights in under 60 seconds. No dermatologist
+              appointment, no awkward waiting room, no &quot;let&apos;s try this cream
+              and see.&quot;
             </p>
           </div>
         </ScrollReveal>
@@ -154,7 +156,7 @@ function TimelineStep({
             {step.title}
           </h3>
         </div>
-        <p className="text-ink-300 text-sm leading-relaxed">
+        <p className="text-ink-500 text-sm leading-relaxed">
           {step.description}
         </p>
       </motion.div>

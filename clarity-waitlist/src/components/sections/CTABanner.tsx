@@ -52,7 +52,7 @@ export function CTABanner() {
             href="#waitlist"
             className="inline-flex items-center gap-2 px-10 py-4 bg-white text-brand-700 font-semibold text-base rounded-2xl hover:bg-brand-50 transition-colors shadow-lg shadow-brand-700/30 btn-glow cursor-pointer"
           >
-            Join the Waitlist
+            I Want Early Access
             <ArrowRight className="w-5 h-5" />
           </MagneticButton>
         </motion.div>

@@ -96,7 +96,7 @@ function FeatureCard({
           <h3 className="font-display text-lg font-semibold text-ink mb-2.5">
             {title}
           </h3>
-          <p className="text-ink-300 text-sm leading-relaxed">{description}</p>
+          <p className="text-ink-500 text-sm leading-relaxed">{description}</p>
         </div>
       </TiltCard>
     </ScrollReveal>
@@ -116,7 +116,7 @@ export function Features() {
               Everything you need to{" "}
               <span className="gradient-text">take control</span> of your skin
             </h2>
-            <p className="text-ink-400 text-lg max-w-xl mx-auto text-balance">
+            <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
               Built for real people who want better skin, not skincare
               influencers.
             </p>

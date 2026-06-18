@@ -64,11 +64,11 @@
   }
 
   .btn-glow {
-    box-shadow: 0 0 20px rgba(58, 144, 112, 0.15);
+    box-shadow: 0 0 20px rgba(58, 144, 112, 0.13), 0 0 40px rgba(244, 140, 92, 0.05);
     transition: box-shadow 0.4s ease;
   }
   .btn-glow:hover {
-    box-shadow: 0 0 50px rgba(58, 144, 112, 0.35);
+    box-shadow: 0 0 50px rgba(58, 144, 112, 0.30), 0 0 70px rgba(244, 140, 92, 0.10);
   }
 
   .card-lift {

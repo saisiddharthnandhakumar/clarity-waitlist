@@ -15,9 +15,9 @@ const orbConfigs = {
     { color: "rgba(58,144,112,0.04)", size: "w-[350px] h-[350px]" },
   ],
   warm: [
-    { color: "rgba(171,149,134,0.08)", size: "w-[500px] h-[500px]" },
-    { color: "rgba(185,169,149,0.05)", size: "w-[400px] h-[400px]" },
-    { color: "rgba(171,149,134,0.04)", size: "w-[350px] h-[350px]" },
+    { color: "rgba(244,140,92,0.06)", size: "w-[500px] h-[500px]" },
+    { color: "rgba(251,201,168,0.05)", size: "w-[400px] h-[400px]" },
+    { color: "rgba(244,140,92,0.03)", size: "w-[350px] h-[350px]" },
   ],
 };
 

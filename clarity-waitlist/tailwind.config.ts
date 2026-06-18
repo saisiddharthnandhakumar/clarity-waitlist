@@ -50,6 +50,19 @@ const config: Config = {
           900: "#3c3c38",
           950: "#1a1a18",
         },
+        warm: {
+          50: "#fef9f5",
+          100: "#fef0e6",
+          200: "#fde0cc",
+          300: "#fbc9a8",
+          400: "#f8a97a",
+          500: "#f48c5c",
+          600: "#e07040",
+          700: "#c05a30",
+          800: "#9a4828",
+          900: "#7a3a22",
+          950: "#4a1f10",
+        },
       },
       fontFamily: {
         display: ['"Clash Display"', "sans-serif"],
@@ -115,7 +128,7 @@ const config: Config = {
         "brand-gradient-subtle": "linear-gradient(135deg, rgba(58,144,112,0.08) 0%, rgba(133,200,174,0.06) 100%)",
         "dark-gradient": "linear-gradient(180deg, #0e221c 0%, #1a1a18 100%)",
         "radial-glow": "radial-gradient(circle at 50% 50%, rgba(58,144,112,0.12) 0%, transparent 70%)",
-        "hero-glow": "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(58,144,112,0.10) 0%, rgba(133,200,174,0.03) 40%, transparent 70%)",
+        "hero-glow": "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(58,144,112,0.10) 0%, rgba(244,140,92,0.04) 25%, rgba(133,200,174,0.03) 45%, transparent 70%)",
         "grid-dot": "radial-gradient(circle at 1px 1px, rgba(26,26,24,0.06) 1px, transparent 0)",
       },
       boxShadow: {

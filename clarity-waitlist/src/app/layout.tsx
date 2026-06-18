@@ -6,9 +6,9 @@ import { Toaster } from "@/components/ui/Toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Clarity — AI Skin Coach for Personalized Skincare Insights",
+  title: "Clarity — AI Skin Coach for Indian Skin | Personalized Acne & Pigmentation Insights",
   description:
-    "Upload a photo. Understand your skin. Get personalized guidance. AI-powered skincare analysis, progress tracking, and product recommendations tailored to your unique skin concerns.",
+    "Stop guessing what's wrong with your skin. Clarity's AI analyzes your selfie and tells you exactly what's happening — built specifically for Indian skin concerns like pigmentation, acne scars, and uneven tone.",
   keywords: [
     "AI skincare",
     "skin analysis",
@@ -20,15 +20,19 @@ export const metadata: Metadata = {
     "skincare recommendations",
     "AI skin coach",
     "Clarity skincare",
+    "Indian skin",
+    "acne scars",
+    "pigmentation",
+    "melanin-rich skin",
   ],
   authors: [{ name: "Clarity" }],
   creator: "Clarity",
   publisher: "Clarity",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://getclarity.app"),
   openGraph: {
-    title: "Clarity — AI Skin Coach for Personalized Skincare",
+    title: "Clarity — AI Skin Coach for Indian Skin | Stop Guessing, Start Knowing",
     description:
-      "Upload a photo. Understand your skin. Get personalized guidance. Join the waitlist for early access.",
+      "Stop guessing what's wrong with your skin. Clarity's AI analyzes your selfie and tells you exactly what's happening — built for Indian skin. Join the waitlist.",
     url: "/",
     siteName: "Clarity",
     locale: "en_US",
@@ -44,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clarity — AI Skin Coach for Personalized Skincare",
+    title: "Clarity — AI Skin Coach for Indian Skin | Stop Guessing, Start Knowing",
     description:
-      "Upload a photo. Understand your skin. Get personalized guidance.",
+      "Stop guessing what's wrong with your skin. Built for Indian skin concerns like pigmentation, acne scars, and uneven tone.",
     images: ["/og-image.png"],
   },
   robots: {

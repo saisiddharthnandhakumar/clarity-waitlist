@@ -9,6 +9,7 @@ import { CTABanner } from "@/components/sections/CTABanner";
 import { Waitlist } from "@/components/sections/Waitlist";
 import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
+import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Waitlist />
         <FAQ />
       </main>
+      <MobileStickyCTA />
       <Footer />
     </>
   );

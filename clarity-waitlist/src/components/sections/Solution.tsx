@@ -76,9 +76,10 @@ export function Solution() {
               Understand your skin in{" "}
               <span className="gradient-text">3 simple steps</span>
             </h2>
-            <p className="text-ink-400 text-lg max-w-xl mx-auto text-balance">
-              No complicated routines. No confusing terminology. Just clear,
-              personalized guidance for your skin.
+            <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
+              You don&apos;t need another 10-step routine from a skincare influencer.
+              You need someone to actually look at YOUR skin and tell you what
+              to do about it — in plain words.
             </p>
           </div>
         </ScrollReveal>
@@ -108,10 +109,10 @@ export function Solution() {
                   <h3 className="font-display text-xl font-semibold text-ink mt-2 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-ink-300 text-sm leading-relaxed mb-3">
+                  <p className="text-ink-500 text-sm leading-relaxed mb-3">
                     {step.description}
                   </p>
-                  <p className="text-ink-200 text-xs leading-relaxed">
+                  <p className="text-ink-500/70 text-xs leading-relaxed">
                     {step.detail}
                   </p>
                 </div>

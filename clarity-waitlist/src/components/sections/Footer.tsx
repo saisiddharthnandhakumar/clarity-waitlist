@@ -10,7 +10,7 @@ const footerLinks = {
       { label: "Features", href: "#features" },
       { label: "How It Works", href: "#how-it-works" },
       { label: "FAQ", href: "#faq" },
-      { label: "Join Waitlist", href: "#waitlist" },
+      { label: "Get Early Access", href: "#waitlist" },
     ],
   },
   legal: {
@@ -88,7 +88,7 @@ export function Footer() {
               strength={4}
               className="text-xs text-brand-400 hover:text-brand-300 transition-colors font-medium cursor-pointer"
             >
-              Join Waitlist
+              Get Early Access
             </MagneticButton>
             <p className="text-xs text-ink-300/30 flex items-center gap-1">
               Made with <Heart className="w-3 h-3 text-red-400" /> for better skin

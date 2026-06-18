@@ -207,7 +207,7 @@ export function Waitlist() {
               You&apos;re on the list!
             </h2>
 
-            <p className="text-ink-400 text-lg leading-relaxed mb-8">
+            <p className="text-ink-500 text-lg leading-relaxed mb-8">
               Thank you for joining the Clarity waitlist. We&apos;ll reach out when
               early access is available. You may be contacted for early feedback
               to help shape the product.
@@ -220,14 +220,14 @@ export function Waitlist() {
                   <p className="text-sm font-semibold text-ink">
                     Watch your inbox
                   </p>
-                  <p className="text-xs text-ink-300">
+                  <p className="text-xs text-ink-500">
                     We&apos;ll send updates and early access invites to your email
                   </p>
                 </div>
               </div>
             </div>
 
-            <p className="text-xs text-ink-200">
+            <p className="text-xs text-ink-500">
               Want to help shape Clarity? Follow us for updates and share with
               friends who might be interested.
             </p>
@@ -252,9 +252,12 @@ export function Waitlist() {
                   Join the{" "}
                   <span className="gradient-text">waitlist</span>
                 </h2>
-                <p className="text-ink-400 leading-relaxed mb-6">
-                  Be among the first to try the AI skin coach. Help shape the
-                  product and get early access before the public launch.
+                <p className="text-ink-500 leading-relaxed mb-6">
+                  Most skincare is tested on white skin in cold, dry climates.
+                  Indian skin is different — our acne scars linger for months, our
+                  pigmentation is more visible, and &quot;fairness&quot; creams aren&apos;t the
+                  answer. Clarity was built for skin like yours. Join the waitlist
+                  and help us build something that actually works for Indian faces.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -266,7 +269,7 @@ export function Waitlist() {
                       <p className="text-sm font-semibold text-ink">
                         Early access
                       </p>
-                      <p className="text-xs text-ink-300">
+                      <p className="text-xs text-ink-500">
                         Get first access before public launch
                       </p>
                     </div>
@@ -279,7 +282,7 @@ export function Waitlist() {
                       <p className="text-sm font-semibold text-ink">
                         Help shape it
                       </p>
-                      <p className="text-xs text-ink-300">
+                      <p className="text-xs text-ink-500">
                         Your feedback will guide product development
                       </p>
                     </div>
@@ -287,7 +290,7 @@ export function Waitlist() {
                 </div>
 
                 <div className="bg-white rounded-2xl p-4 border border-surface-100 shadow-sm">
-                  <p className="text-xs text-ink-300 leading-relaxed">
+                  <p className="text-xs text-ink-500 leading-relaxed">
                     <ShieldCheck className="w-3.5 h-3.5 inline mr-1 text-brand-500" />
                     We respect your privacy. Your information is used only for
                     early access and product research. We do not sell your data.
@@ -434,7 +437,7 @@ export function Waitlist() {
                           </>
                         ) : (
                           <>
-                            Join the Waitlist
+                            Secure My Spot
                             <ArrowRight className="w-5 h-5" />
                           </>
                         )}

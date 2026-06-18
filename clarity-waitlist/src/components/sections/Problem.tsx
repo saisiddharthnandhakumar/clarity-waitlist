@@ -19,7 +19,7 @@ const painPoints = [
     icon: <ShoppingBag className="w-6 h-6" />,
     title: "Expensive trial and error",
     description:
-      "You've spent money on products that didn't work, sat on your shelf, or made things worse. Without understanding your skin, every purchase is a guess.",
+      "You've spent money on products that didn't work, sat on your shelf, or made things worse — many weren't even formulated for Indian skin tones or tropical climates. Without understanding your skin, every purchase is a guess.",
     stat: "₹2,500",
     statLabel: "average wasted on wrong products/year",
     accentColor: "border-l-amber-500",
@@ -60,7 +60,7 @@ export function Problem() {
               Skincare shouldn&apos;t feel{" "}
               <span className="gradient-text">this hard</span>
             </h2>
-            <p className="text-ink-400 text-lg max-w-xl mx-auto text-balance">
+            <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
               Millions of people struggle with the same frustrations. You&apos;re
               not alone — and there&apos;s a better way.
             </p>
@@ -82,14 +82,14 @@ export function Problem() {
                       <h3 className="font-display text-lg font-semibold text-ink mb-2">
                         {point.title}
                       </h3>
-                      <p className="text-ink-300 text-sm leading-relaxed mb-4">
+                      <p className="text-ink-500 text-sm leading-relaxed mb-4">
                         {point.description}
                       </p>
                       <div className="flex items-baseline gap-2 pt-3 border-t border-surface-100">
                         <span className="text-2xl font-display font-semibold text-brand-600">
                           {point.stat}
                         </span>
-                        <span className="text-xs text-ink-300">
+                        <span className="text-xs text-ink-500">
                           {point.statLabel}
                         </span>
                       </div>

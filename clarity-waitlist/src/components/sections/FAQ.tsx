@@ -7,6 +7,11 @@ import { Plus } from "lucide-react";
 
 const faqs = [
   {
+    question: "Does Clarity work for Indian skin tones and concerns?",
+    answer:
+      "Yes — Clarity was built for skin like yours. Our AI is trained on diverse skin types and tones, and it's designed to identify the concerns most common in Indian skin: post-acne pigmentation that lingers for months, uneven skin tone, dark circles, and stubborn acne. These are exactly the concerns that generic skincare advice often overlooks.",
+  },
+  {
     question: "Is this a medical diagnosis app?",
     answer:
       "No. Clarity is a skincare guidance tool — it helps you understand visible skin concerns and suggests products and routines, but it does not provide medical diagnoses or replace a dermatologist. If you have serious skin conditions, we encourage you to see a qualified professional.",
@@ -89,7 +94,7 @@ function FaqItem({
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             className="overflow-hidden"
           >
-            <p className="text-ink-300 text-sm md:text-base leading-relaxed pb-5 pr-12 pl-2">
+            <p className="text-ink-500 text-sm md:text-base leading-relaxed pb-5 pr-12 pl-2">
               {answer}
             </p>
           </motion.div>
@@ -118,7 +123,7 @@ export function FAQ() {
               Questions you might{" "}
               <span className="gradient-text">have</span>
             </h2>
-            <p className="text-ink-400 text-lg max-w-xl mx-auto text-balance">
+            <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
               Honest answers about what Clarity is — and what it isn&apos;t.
             </p>
           </div>

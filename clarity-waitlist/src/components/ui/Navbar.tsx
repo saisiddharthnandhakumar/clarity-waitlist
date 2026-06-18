@@ -90,7 +90,7 @@ export function Navbar() {
                 strength={4}
                 className="px-5 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors shadow-sm shadow-brand-200/30 cursor-pointer"
               >
-                Join Waitlist
+                Get Early Access
               </MagneticButton>
             </div>
 
@@ -175,7 +175,7 @@ export function Navbar() {
                   transition={{ delay: 0.25 }}
                   className="mt-4 px-6 py-4 bg-brand-600 text-white font-semibold text-lg rounded-2xl hover:bg-brand-700 transition-colors text-center cursor-pointer"
                 >
-                  Join Waitlist
+                  Get Early Access
                 </motion.a>
               </div>
             </motion.div>

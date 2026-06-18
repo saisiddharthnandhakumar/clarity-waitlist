@@ -23,7 +23,7 @@ export function Hero() {
         {/* Base radial glow */}
         <div className="absolute inset-0 bg-hero-glow" />
         {/* Secondary subtle glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_100%,rgba(133,200,174,0.04)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_100%,rgba(133,200,174,0.04)_0%,rgba(244,140,92,0.03)_40%,transparent_60%)]" />
         {/* Subtle dot grid */}
         <div
           className="absolute inset-0"
@@ -63,8 +63,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
               className="font-display text-display-xl font-semibold text-ink text-balance mb-6"
             >
-              Discover what&apos;s{" "}
-              <GradientText>really affecting</GradientText> your skin
+              Stop guessing.{" "}
+              <GradientText>Finally know</GradientText> what your skin actually needs.
             </motion.h1>
 
             <motion.p
@@ -73,8 +73,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               className="text-xl md:text-2xl text-ink-400 leading-relaxed max-w-lg text-balance mb-8"
             >
-              Upload a photo, get personalized skin insights, and track your
-              progress over time with AI-powered skincare guidance.
+              You&apos;ve spent enough on products that promised results and sat
+              half-used on your shelf. Upload a selfie and finally get answers
+              about YOUR face — not generic advice for everyone.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -89,8 +90,8 @@ export function Hero() {
                 href="#waitlist"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-600 text-white font-semibold text-base hover:bg-brand-700 transition-colors duration-200 shadow-lg shadow-brand-200/50 btn-glow cursor-pointer"
               >
-                Join the Waitlist
-                <ArrowDown className="w-4 h-4" />
+                Get Early Access
+                <Sparkles className="w-4 h-4" />
               </MagneticButton>
               <MagneticButton
                 as="a"
@@ -107,21 +108,21 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-wrap items-center gap-6 text-sm text-ink-300"
+              className="flex flex-wrap items-center gap-6 text-sm text-ink-500"
             >
               <span className="flex items-center gap-1.5">
                 <Shield className="w-4 h-4 text-brand-500" />
-                Private & secure
+                Your Photos Stay Yours
               </span>
               <span className="w-1 h-1 rounded-full bg-surface-200 hidden sm:block" />
               <span className="flex items-center gap-1.5">
                 <Users className="w-4 h-4 text-brand-500" />
-                For everyone
+                Built for Indian Skin
               </span>
               <span className="w-1 h-1 rounded-full bg-surface-200 hidden sm:block" />
               <span className="flex items-center gap-1.5">
                 <Star className="w-4 h-4 text-brand-500" />
-                Personalized
+                Science, Not Hype
               </span>
             </motion.div>
           </div>
