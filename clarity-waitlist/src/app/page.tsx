@@ -1,0 +1,31 @@
+import { Navbar } from "@/components/ui/Navbar";
+import { Hero } from "@/components/sections/Hero";
+import { Problem } from "@/components/sections/Problem";
+import { Solution } from "@/components/sections/Solution";
+import { Features } from "@/components/sections/Features";
+import { ProductPreview } from "@/components/sections/ProductPreview";
+import { HowItWorks } from "@/components/sections/HowItWorks";
+import { CTABanner } from "@/components/sections/CTABanner";
+import { Waitlist } from "@/components/sections/Waitlist";
+import { FAQ } from "@/components/sections/FAQ";
+import { Footer } from "@/components/sections/Footer";
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Problem />
+        <Solution />
+        <ProductPreview />
+        <Features />
+        <HowItWorks />
+        <CTABanner />
+        <Waitlist />
+        <FAQ />
+      </main>
+      <Footer />
+    </>
+  );
+}

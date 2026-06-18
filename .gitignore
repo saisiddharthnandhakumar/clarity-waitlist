@@ -1,0 +1,8 @@
+# Claude
+.claude/
+
+# Playwright MCP
+.playwright-mcp/
+
+# Screenshots
+*.png

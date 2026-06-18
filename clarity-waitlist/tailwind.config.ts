@@ -1,0 +1,142 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50: "#f0f7f4",
+          100: "#d9efe6",
+          200: "#b5dfce",
+          300: "#85c8ae",
+          400: "#58ab8a",
+          500: "#3a9070",
+          600: "#2c7459",
+          700: "#255d49",
+          800: "#214a3c",
+          900: "#1c3d32",
+          950: "#0e221c",
+        },
+        surface: {
+          DEFAULT: "#faf9f7",
+          50: "#faf9f7",
+          100: "#f3f1ed",
+          200: "#e8e4dc",
+          300: "#d9d2c7",
+          400: "#c8bdac",
+          500: "#b9a995",
+          600: "#ab9586",
+          700: "#8f7c6e",
+          800: "#75675e",
+          900: "#605550",
+          950: "#332c29",
+        },
+        ink: {
+          DEFAULT: "#1a1a18",
+          50: "#f6f6f5",
+          100: "#e7e7e5",
+          200: "#d1d1ce",
+          300: "#b0b0ab",
+          400: "#888882",
+          500: "#6d6d67",
+          600: "#5d5d57",
+          700: "#4f4f4a",
+          800: "#454540",
+          900: "#3c3c38",
+          950: "#1a1a18",
+        },
+      },
+      fontFamily: {
+        display: ['"Clash Display"', "sans-serif"],
+        body: ['"Satoshi"', "sans-serif"],
+      },
+      fontSize: {
+        "display-xl": ["clamp(3rem, 8vw, 5.5rem)", { lineHeight: "1.05", letterSpacing: "-0.03em" }],
+        "display-lg": ["clamp(2.25rem, 5vw, 3.75rem)", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
+        "display-md": ["clamp(1.75rem, 3.5vw, 2.5rem)", { lineHeight: "1.15", letterSpacing: "-0.02em" }],
+      },
+      animation: {
+        "fade-in": "fadeIn 0.6s ease-out forwards",
+        "fade-in-up": "fadeInUp 0.7s ease-out forwards",
+        "fade-in-scale": "fadeInScale 0.5s ease-out forwards",
+        shimmer: "shimmer 2s infinite",
+        float: "float 6s ease-in-out infinite",
+        pulse: "pulse 3s ease-in-out infinite",
+        "gradient-shift": "gradientShift 8s ease infinite",
+        "breathing-glow": "breathingGlow 3s ease-in-out infinite",
+        marquee: "marquee 40s linear infinite",
+        "marquee-slow": "marquee 60s linear infinite",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeInScale: {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.7" },
+        },
+        gradientShift: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        breathingGlow: {
+          "0%, 100%": { boxShadow: "0 0 20px rgba(58,144,112,0.15)" },
+          "50%": { boxShadow: "0 0 40px rgba(58,144,112,0.35)" },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+      },
+      backgroundImage: {
+        "brand-gradient": "linear-gradient(135deg, #3a9070 0%, #58ab8a 50%, #85c8ae 100%)",
+        "brand-gradient-subtle": "linear-gradient(135deg, rgba(58,144,112,0.08) 0%, rgba(133,200,174,0.06) 100%)",
+        "dark-gradient": "linear-gradient(180deg, #0e221c 0%, #1a1a18 100%)",
+        "radial-glow": "radial-gradient(circle at 50% 50%, rgba(58,144,112,0.12) 0%, transparent 70%)",
+        "hero-glow": "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(58,144,112,0.10) 0%, rgba(133,200,174,0.03) 40%, transparent 70%)",
+        "grid-dot": "radial-gradient(circle at 1px 1px, rgba(26,26,24,0.06) 1px, transparent 0)",
+      },
+      boxShadow: {
+        "premium": "0 1px 2px rgba(26,26,24,0.04), 0 4px 16px rgba(26,26,24,0.04), 0 8px 32px rgba(26,26,24,0.02)",
+        "premium-lg": "0 1px 2px rgba(26,26,24,0.06), 0 8px 24px rgba(26,26,24,0.04), 0 16px 48px rgba(26,26,24,0.03)",
+        "glass": "0 1px 2px rgba(255,255,255,0.1), 0 4px 16px rgba(0,0,0,0.04)",
+        "glow-brand": "0 0 80px rgba(58,144,112,0.20)",
+        "glow-brand-sm": "0 0 30px rgba(58,144,112,0.12)",
+      },
+      transitionDuration: {
+        "250": "250ms",
+        "400": "400ms",
+      },
+      borderRadius: {
+        "2xl": "1rem",
+        "3xl": "1.25rem",
+        "4xl": "1.5rem",
+        "5xl": "2rem",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
