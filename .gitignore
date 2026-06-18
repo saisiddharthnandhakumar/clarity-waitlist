@@ -6,3 +6,8 @@
 
 # Screenshots
 *.png
+
+# Accidental root-level npm artifacts
+node_modules/
+package.json
+package-lock.json
