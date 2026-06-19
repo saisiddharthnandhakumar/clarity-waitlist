@@ -71,6 +71,18 @@
     box-shadow: 0 0 50px rgba(58, 144, 112, 0.30), 0 0 70px rgba(244, 140, 92, 0.10);
   }
 
+  .btn-glow-accent {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.13), 0 0 40px rgba(124, 58, 237, 0.05);
+    transition: box-shadow 0.4s ease;
+  }
+  .btn-glow-accent:hover {
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.30), 0 0 70px rgba(124, 58, 237, 0.12);
+  }
+
+  .glass-nav {
+    @apply bg-white/70 backdrop-blur-xl border-b border-white/40 shadow-sm;
+  }
+
   .card-lift {
     @apply transition-all duration-300;
   }

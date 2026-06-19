@@ -7,7 +7,7 @@ import { BackgroundOrbs } from "@/components/ui/BackgroundOrbs";
 
 export function CTABanner() {
   return (
-    <section className="py-16 md:py-20 bg-brand-600 relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-accent-600 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -22,7 +22,7 @@ export function CTABanner() {
 
       {/* Decorative circles */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl" />
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-accent-400/20 rounded-full blur-3xl" />
 
       {/* Floating orbs */}
       <BackgroundOrbs variant="brand" count={2} />
@@ -40,19 +40,19 @@ export function CTABanner() {
           </div>
 
           <h2 className="font-display text-display-md font-semibold text-white mb-4 text-balance">
-            Ready to take the guesswork out of skincare?
+            Your face card isn&apos;t going to max itself.
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 text-balance">
-            Join the waitlist. Be among the first to try the AI skin coach and
-            help shape the product.
+            Stop guessing. Stop scrolling. Stop wasting money on products that were
+            never built for your skin. Early access is free. Be first to know when we launch.
           </p>
 
           <MagneticButton
             as="a"
             href="#waitlist"
-            className="inline-flex items-center gap-2 px-10 py-4 bg-white text-brand-700 font-semibold text-base rounded-2xl hover:bg-brand-50 transition-colors shadow-lg shadow-brand-700/30 btn-glow cursor-pointer"
+            className="inline-flex items-center gap-2 px-10 py-4 bg-white text-accent-700 font-semibold text-base rounded-2xl hover:bg-accent-50 transition-colors shadow-lg shadow-accent-700/30 btn-glow-accent cursor-pointer"
           >
-            I Want Early Access
+            I Want In — Secure My Spot
             <ArrowRight className="w-5 h-5" />
           </MagneticButton>
         </motion.div>

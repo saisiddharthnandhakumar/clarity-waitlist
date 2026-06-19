@@ -1,13 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, Shield, Users, Star } from "lucide-react";
+import { ArrowDown, Sparkles, Shield, MapPin, Microscope, HeartHandshake } from "lucide-react";
 import { ProductMockup } from "@/components/sections/ProductMockup";
 import { CursorGlow } from "@/components/ui/CursorGlow";
 import { ParticleField } from "@/components/ui/ParticleField";
 import { BackgroundOrbs } from "@/components/ui/BackgroundOrbs";
 import { GradientText } from "@/components/ui/GradientText";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+
+const trustSignals = [
+  { icon: <Shield className="w-4 h-4" />, label: "Dermatologist-Reviewed" },
+  { icon: <MapPin className="w-4 h-4" />, label: "Built for Indian Skin" },
+  { icon: <Microscope className="w-4 h-4" />, label: "Evidence-Based, Not Hype-Driven" },
+  { icon: <HeartHandshake className="w-4 h-4" />, label: "No Sponsorships. No Affiliate Links. Ever." },
+];
 
 export function Hero() {
   return (
@@ -44,17 +51,17 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* ── Left: Copy ── */}
           <div className="relative z-10">
-            {/* Trust badge */}
+            {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-sm font-medium mb-8 overflow-hidden relative"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-50 border border-accent-100 text-accent-700 text-sm font-medium mb-8 overflow-hidden relative"
             >
               {/* Subtle animated gradient accent on badge */}
-              <div className="absolute inset-0 bg-gradient-to-r from-brand-100/0 via-brand-100/50 to-brand-100/0 animate-shimmer" />
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-100/0 via-accent-100/50 to-accent-100/0 animate-shimmer" />
               <Sparkles className="w-4 h-4 relative z-10" />
-              <span className="relative z-10">AI-Powered Skincare Coach</span>
+              <span className="relative z-10">Your Skin. Your Data. No Filter.</span>
             </motion.div>
 
             <motion.h1
@@ -63,8 +70,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
               className="font-display text-display-xl font-semibold text-ink text-balance mb-6"
             >
-              Stop guessing.{" "}
-              <GradientText>Finally know</GradientText> what your skin actually needs.
+              Your face card{" "}
+              <GradientText>deserves better</GradientText> than guesswork.
             </motion.h1>
 
             <motion.p
@@ -73,9 +80,10 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               className="text-xl md:text-2xl text-ink-400 leading-relaxed max-w-lg text-balance mb-8"
             >
-              You&apos;ve spent enough on products that promised results and sat
-              half-used on your shelf. Upload a selfie and finally get answers
-              about YOUR face — not generic advice for everyone.
+              You&apos;ve watched 300 Instagram Reels. Bought 7 products. Tried a 12-step routine
+              that broke your barrier. And your skin still won&apos;t tell you what it actually needs.
+              Clarity uses AI trained on Indian skin tones to give you answers that are actually
+              about <em>your</em> face — not some influencer&apos;s brand deal.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -83,14 +91,14 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-              className="flex flex-col sm:flex-row gap-3 mb-8"
+              className="flex flex-col sm:flex-row gap-3 mb-10"
             >
               <MagneticButton
                 as="a"
                 href="#waitlist"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-600 text-white font-semibold text-base hover:bg-brand-700 transition-colors duration-200 shadow-lg shadow-brand-200/50 btn-glow cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-600 text-white font-semibold text-base hover:bg-accent-700 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent cursor-pointer"
               >
-                Get Early Access
+                Secure My Spot
                 <Sparkles className="w-4 h-4" />
               </MagneticButton>
               <MagneticButton
@@ -99,7 +107,7 @@ export function Hero() {
                 strength={4}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-white border border-surface-200 text-ink font-medium text-base hover:bg-surface-50 transition-colors duration-200 cursor-pointer"
               >
-                See How It Works
+                How It Works ↓
               </MagneticButton>
             </motion.div>
 
@@ -108,22 +116,14 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-wrap items-center gap-6 text-sm text-ink-500"
+              className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-ink-500"
             >
-              <span className="flex items-center gap-1.5">
-                <Shield className="w-4 h-4 text-brand-500" />
-                Your Photos Stay Yours
-              </span>
-              <span className="w-1 h-1 rounded-full bg-surface-200 hidden sm:block" />
-              <span className="flex items-center gap-1.5">
-                <Users className="w-4 h-4 text-brand-500" />
-                Built for Indian Skin
-              </span>
-              <span className="w-1 h-1 rounded-full bg-surface-200 hidden sm:block" />
-              <span className="flex items-center gap-1.5">
-                <Star className="w-4 h-4 text-brand-500" />
-                Science, Not Hype
-              </span>
+              {trustSignals.map((signal, i) => (
+                <span key={i} className="flex items-center gap-1.5">
+                  <span className="text-accent-500">{signal.icon}</span>
+                  {signal.label}
+                </span>
+              ))}
             </motion.div>
           </div>
 

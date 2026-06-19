@@ -4,54 +4,54 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { TiltCard } from "@/components/ui/TiltCard";
 import {
   ScanLine,
-  Lightbulb,
-  TrendingUp,
-  ListChecks,
-  Users,
   ShieldCheck,
+  TrendingUp,
+  HeartHandshake,
+  MapPin,
+  Lock,
 } from "lucide-react";
 
 const features = [
   {
     icon: <ScanLine className="w-6 h-6" />,
-    title: "Personalized Analysis",
+    title: "AI That Sees Your Skin, Not Your Followers",
     description:
-      "Understand your skin more clearly. Our AI identifies visible concerns and gives you a detailed breakdown of what's affecting your skin.",
+      "Trained on Indian skin tones. Not celebrity selfies. Not ring-lit studio shots. Your bare face, your real lighting, your actual concerns — analyzed by AI that actually understands melanin-rich skin.",
     size: "large" as FeatureSize,
   },
   {
-    icon: <Lightbulb className="w-6 h-6" />,
-    title: "Smart Product Recommendations",
+    icon: <ShieldCheck className="w-6 h-6" />,
+    title: "Routines That Won't Destroy Your Barrier",
     description:
-      "Get product suggestions based on your specific concerns — not generic recommendations. Stop buying products that don't work for you.",
+      "We cap your routine at 3-4 steps unless a derm-reviewed protocol says otherwise. More products don't mean better skin — they mean more inflammation. Barrier-friendly. Evidence-backed.",
     size: "small" as FeatureSize,
   },
   {
     icon: <TrendingUp className="w-6 h-6" />,
-    title: "Progress Tracking",
+    title: "Track Progress, Not Likes",
     description:
-      "Compare scans over time. See exactly what's improving, what's not, and adjust your routine based on real data, not guesswork.",
+      "Weekly Clarity Score tracks acne, texture, hyperpigmentation, and barrier health. No filters. No flattery. Just data that tells you the truth — not what gets more engagement on the algorithm.",
     size: "small" as FeatureSize,
   },
   {
-    icon: <ListChecks className="w-6 h-6" />,
-    title: "Simple Routines",
+    icon: <HeartHandshake className="w-6 h-6" />,
+    title: "Recommendations Without Sponsorships",
     description:
-      "Know what to use, when to use it, and in what order. Morning and evening routines designed around your specific skin concerns.",
+      "We'll tell you a ₹349 pharmacy cleanser works better for your skin than a ₹2,500 influencer brand. Because we don't take a single paisa from product companies. Period.",
     size: "small" as FeatureSize,
   },
   {
-    icon: <Users className="w-6 h-6" />,
-    title: "Beginner-Friendly",
+    icon: <MapPin className="w-6 h-6" />,
+    title: "Built by People Who Get It",
     description:
-      "Designed for people who don't already know skincare. No complicated terminology, no overwhelming choices — just clear, simple guidance.",
+      "Indian skin. Indian climate. Indian pigmentation concerns. Mumbai humidity. Delhi pollution. Bangalore hard water. We built Clarity because nobody else built it for us.",
     size: "small" as FeatureSize,
   },
   {
-    icon: <ShieldCheck className="w-6 h-6" />,
-    title: "Private & Secure",
+    icon: <Lock className="w-6 h-6" />,
+    title: "Private. Period.",
     description:
-      "Your photos and data are encrypted and never shared. We take your privacy seriously — this is your personal skin journey.",
+      "Your face stays on your device. We don't sell your data, your selfies, or your routine to anyone. No ads. No data brokering. No creepy \"personalization\" that's actually surveillance.",
     size: "wide" as FeatureSize,
   },
 ];
@@ -71,18 +71,12 @@ function FeatureCard({
   size: FeatureSize;
   index: number;
 }) {
-  const sizeClasses = {
-    large: "sm:col-span-2 lg:col-span-2",
-    small: "",
-    wide: "sm:col-span-2 lg:col-span-3",
-  };
-
   return (
     <ScrollReveal key={index} delay={index * 0.08} direction="scaleIn">
       <TiltCard>
         <div
           className={`group bg-white rounded-3xl p-6 md:p-8 border border-surface-100 shadow-premium hover:shadow-premium-lg transition-all duration-300 h-full card-lift relative overflow-hidden ${
-            size === "large" ? "animated-border" : "hover:border-brand-100"
+            size === "large" ? "animated-border" : "hover:border-accent-100"
           }`}
         >
           {/* Subtle gradient highlight on hero card */}
@@ -109,16 +103,16 @@ export function Features() {
       <div className="section-container">
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-20">
-            <span className="text-xs font-semibold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full">
+            <span className="text-xs font-semibold text-accent-600 uppercase tracking-widest bg-accent-50 px-3 py-1 rounded-full">
               Features
             </span>
             <h2 className="font-display text-display-lg font-semibold text-ink mt-4 mb-4 text-balance">
-              Everything you need to{" "}
-              <span className="gradient-text">take control</span> of your skin
+              The skincare coach that actually looks at{" "}
+              <span className="gradient-text">your face</span>
             </h2>
             <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
-              Built for real people who want better skin, not skincare
-              influencers.
+              Built for real people with real skin, real budgets, and zero tolerance
+              for influencer nonsense.
             </p>
           </div>
         </ScrollReveal>

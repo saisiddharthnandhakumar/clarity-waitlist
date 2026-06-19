@@ -6,9 +6,9 @@ import { Toaster } from "@/components/ui/Toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Clarity — AI Skin Coach for Indian Skin | Personalized Acne & Pigmentation Insights",
+  title: "Clarity — AI Skin Coach | Stop Guessing. Start Knowing Your Skin.",
   description:
-    "Stop guessing what's wrong with your skin. Clarity's AI analyzes your selfie and tells you exactly what's happening — built specifically for Indian skin concerns like pigmentation, acne scars, and uneven tone.",
+    "Your face card deserves better than guesswork. Clarity's AI analyzes your selfie and tells you what your skin actually needs — built for Indian skin, zero sponsorships, evidence-backed.",
   keywords: [
     "AI skincare",
     "skin analysis",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   publisher: "Clarity",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://getclarity.app"),
   openGraph: {
-    title: "Clarity — AI Skin Coach for Indian Skin | Stop Guessing, Start Knowing",
+    title: "Clarity — AI Skin Coach | Your Face Card Deserves Better Than Guesswork",
     description:
-      "Stop guessing what's wrong with your skin. Clarity's AI analyzes your selfie and tells you exactly what's happening — built for Indian skin. Join the waitlist.",
+      "Built for Indian skin. No sponsorships. No filters. Just AI-powered skin analysis that actually tells you what your face needs.",
     url: "/",
     siteName: "Clarity",
     locale: "en_US",
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Clarity — AI Skin Coach",
+        alt: "Clarity — AI Skin Coach for Indian Skin",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clarity — AI Skin Coach for Indian Skin | Stop Guessing, Start Knowing",
+    title: "Clarity — AI Skin Coach | Stop Guessing. Start Knowing.",
     description:
-      "Stop guessing what's wrong with your skin. Built for Indian skin concerns like pigmentation, acne scars, and uneven tone.",
+      "Built for Indian skin. No sponsorships. No filters. Just AI-powered skin analysis that actually tells you what your face needs.",
     images: ["/og-image.png"],
   },
   robots: {

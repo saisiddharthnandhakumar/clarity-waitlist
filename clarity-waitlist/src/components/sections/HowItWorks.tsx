@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import {
   Camera,
@@ -18,9 +18,9 @@ export function HowItWorks() {
     {
       number: "1",
       icon: <Camera className="w-6 h-6" />,
-      title: "Upload a photo",
+      title: "Snap",
       description:
-        "Take a clear selfie in natural light. Our AI is trained to analyze visible skin characteristics from a simple phone photo.",
+        "Take a bare-face selfie. No makeup. No filter. No \"good lighting\" required. Clarity's AI handles the rest — trained on Indian skin tones, not studio headshots.",
       color: "from-brand-500 to-brand-600",
       bgColor: "bg-brand-50",
       borderColor: "border-brand-100",
@@ -28,9 +28,9 @@ export function HowItWorks() {
     {
       number: "2",
       icon: <Target className="w-6 h-6" />,
-      title: "AI analyzes your skin",
+      title: "Analyze",
       description:
-        "Within seconds, you'll see a breakdown of skin texture, pigmentation, oiliness, acne presence, and more — all in plain language.",
+        "Our model scans for acne, hyperpigmentation, texture, barrier damage, and dark spots — trained specifically on Indian skin tones across the Fitzpatrick scale. Not white skin in cold climates.",
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-100",
@@ -38,9 +38,9 @@ export function HowItWorks() {
     {
       number: "3",
       icon: <BarChart3 className="w-6 h-6" />,
-      title: "Get your Clarity Score",
+      title: "Baseline",
       description:
-        "Receive a personalized score that tracks your skin's overall health. Watch it improve as you follow your recommended routine.",
+        "You get your Clarity Score. This is NOT a beauty rating. It's a personal baseline that tells you exactly where your skin stands today. Think of it like your credit score — but for your face card. This is your starting line, not your worth.",
       color: "from-amber-500 to-amber-600",
       bgColor: "bg-amber-50",
       borderColor: "border-amber-100",
@@ -48,9 +48,9 @@ export function HowItWorks() {
     {
       number: "4",
       icon: <CheckCircle2 className="w-6 h-6" />,
-      title: "Follow your routine",
+      title: "Routine",
       description:
-        "Get a simple, personalized morning and evening routine with products that match your specific concerns and budget.",
+        "You get a simple, evidence-based routine. AM: 4 steps max. PM: 3 steps max. Product recommendations with real prices in rupees, zero sponsorships, and pharmacy options included. If an influencer tells you to add more steps — ignore them.",
       color: "from-brand-600 to-brand-700",
       bgColor: "bg-brand-50",
       borderColor: "border-brand-100",
@@ -58,9 +58,9 @@ export function HowItWorks() {
     {
       number: "5",
       icon: <CalendarDays className="w-6 h-6" />,
-      title: "Track & improve",
+      title: "Track",
       description:
-        "Scan weekly. Compare results. Watch your skin improve over time with clear before-and-after progress tracking.",
+        "Weekly check-ins. Updated Clarity Score. Real progress tracking. Compare scans side by side. See your Clarity Score climb. Because skincare without data is just vibes — and vibes don't clear acne.",
       color: "from-purple-500 to-purple-600",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-100",
@@ -80,9 +80,8 @@ export function HowItWorks() {
               <span className="gradient-text">5 steps</span>
             </h2>
             <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
-              From selfie to insights in under 60 seconds. No dermatologist
-              appointment, no awkward waiting room, no &quot;let&apos;s try this cream
-              and see.&quot;
+              Five steps. No shortcuts. No sponsorships. No &quot;let&apos;s try this cream
+              and see.&quot; Just your face getting better, tracked in real numbers.
             </p>
           </div>
         </ScrollReveal>

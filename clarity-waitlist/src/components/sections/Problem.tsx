@@ -3,44 +3,44 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { BackgroundOrbs } from "@/components/ui/BackgroundOrbs";
-import { AlertCircle, ShoppingBag, TrendingDown, HelpCircle } from "lucide-react";
+import { Film, AlertTriangle, PackageOpen, TrendingUp } from "lucide-react";
 
 const painPoints = [
   {
-    icon: <AlertCircle className="w-6 h-6" />,
-    title: "Too much conflicting advice",
+    icon: <Film className="w-6 h-6" />,
+    title: "Millions of skincare videos. Zero about YOUR face.",
     description:
-      "Instagram, YouTube, Reddit, TikTok — everyone says something different. It's overwhelming trying to figure out who to trust and what actually works for your skin.",
-    stat: "73%",
-    statLabel: "feel overwhelmed by skincare advice",
+      "You're drowning in GRWM Reels, YouTube Shorts hauls, and 30-second voiceovers telling you to buy five different serums. Every creator has a new \"holy grail\" every week. And none of them have ever looked at your skin. Gen Z feels worse about their skin after consuming online beauty content — not better. That's not failure. That's design.",
+    stat: "93%",
+    statLabel: "feel worse about their skin from online beauty standards",
     accentColor: "border-l-brand-500",
   },
   {
-    icon: <ShoppingBag className="w-6 h-6" />,
-    title: "Expensive trial and error",
+    icon: <AlertTriangle className="w-6 h-6" />,
+    title: "The glow trap is real.",
     description:
-      "You've spent money on products that didn't work, sat on your shelf, or made things worse — many weren't even formulated for Indian skin tones or tropical climates. Without understanding your skin, every purchase is a guess.",
+      "It's called \"influencer inflammation\" — and nobody's talking about it. You layer a BHA, two serums, a retinol, and a toner because someone with ring lights said so. Your barrier screams. Your skin gets angry, red, and worse than when you started. You don't need a 10-step routine. You need a routine that's actually built for YOUR barrier.",
+    stat: "1 in 2",
+    statLabel: "Gen Z have damaged their barrier from over-exfoliation",
+    accentColor: "border-l-warm-500",
+  },
+  {
+    icon: <PackageOpen className="w-6 h-6" />,
+    title: "You've built a product graveyard.",
+    description:
+      "That ₹850 serum you bought after a viral Reel? Used twice. The ₹600 moisturizer that \"everyone swears by\"? Broke you out by day three. The average skincare-curious Gen Z Indian wastes over ₹2,500 a year on half-used products. FOMO buying doesn't make your face card stronger — it just empties your wallet and your shelf.",
     stat: "₹2,500",
-    statLabel: "average wasted on wrong products/year",
+    statLabel: "average wasted on wrong products per year",
     accentColor: "border-l-amber-500",
   },
   {
-    icon: <TrendingDown className="w-6 h-6" />,
-    title: "No clear progress tracking",
+    icon: <TrendingUp className="w-6 h-6" />,
+    title: "Without data, you're just hoping.",
     description:
-      "You try a new routine for weeks but have no idea if it's actually helping. Without tracking, you can't know what's working and what's not.",
+      "68% of people can't tell if their routine is actually working. You stare at the mirror. You take selfies. You zoom in. But you're judging your skin on vibes, not measurements. Skincare shouldn't be faith-based. You should know — with real numbers — whether things are getting better, worse, or just standing still.",
     stat: "68%",
-    statLabel: "can't tell if their routine is working",
+    statLabel: "can't tell if their routine is actually working",
     accentColor: "border-l-blue-500",
-  },
-  {
-    icon: <HelpCircle className="w-6 h-6" />,
-    title: "Skincare feels confusing",
-    description:
-      "Niacinamide, retinol, AHAs, BHAs — the terminology alone is intimidating. You want better skin but don't know where to start or what routine fits you.",
-    stat: "1 in 2",
-    statLabel: "people don't know where to start with skincare",
-    accentColor: "border-l-purple-500",
   },
 ];
 
@@ -53,16 +53,16 @@ export function Problem() {
       <div className="section-container relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-20">
-            <span className="text-xs font-semibold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full">
-              We Get It
+            <span className="text-xs font-semibold text-warm-600 uppercase tracking-widest bg-warm-50 px-3 py-1 rounded-full">
+              The Skincare Industry Failed You
             </span>
             <h2 className="font-display text-display-lg font-semibold text-ink mt-4 mb-4 text-balance">
-              Skincare shouldn&apos;t feel{" "}
-              <span className="gradient-text">this hard</span>
+              You&apos;re not bad at skincare.{" "}
+              <span className="gradient-text">They made it impossible.</span>
             </h2>
             <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
-              Millions of people struggle with the same frustrations. You&apos;re
-              not alone — and there&apos;s a better way.
+              A billion-dollar industry profits from your confusion. More products. More steps.
+              More insecurity. Here&apos;s what they don&apos;t want you to realize.
             </p>
           </div>
         </ScrollReveal>

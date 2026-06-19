@@ -42,8 +42,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-ink-300/40 text-sm leading-relaxed mb-6 max-w-xs">
-              AI-powered skincare guidance for people who want better skin
-              without the guesswork.
+              Clarity — Because your face card deserves science, not sponsorships.
             </p>
             <a
               href="mailto:hello@getclarity.app"
@@ -91,7 +90,7 @@ export function Footer() {
               Get Early Access
             </MagneticButton>
             <p className="text-xs text-ink-300/30 flex items-center gap-1">
-              Made with <Heart className="w-3 h-3 text-red-400" /> for better skin
+              Made with <Heart className="w-3 h-3 text-red-400" /> in India. Zero filter. Zero BS.
             </p>
           </div>
         </div>

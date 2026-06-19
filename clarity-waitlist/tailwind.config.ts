@@ -63,6 +63,19 @@ const config: Config = {
           900: "#7a3a22",
           950: "#4a1f10",
         },
+        accent: {
+          50: "#f5f3ff",
+          100: "#ede9fe",
+          200: "#ddd6fe",
+          300: "#c4b5fd",
+          400: "#a78bfa",
+          500: "#8b5cf6",
+          600: "#7c3aed",
+          700: "#6d28d9",
+          800: "#5b21b6",
+          900: "#4c1d95",
+          950: "#2e1065",
+        },
       },
       fontFamily: {
         display: ['"Clash Display"', "sans-serif"],
@@ -82,6 +95,7 @@ const config: Config = {
         pulse: "pulse 3s ease-in-out infinite",
         "gradient-shift": "gradientShift 8s ease infinite",
         "breathing-glow": "breathingGlow 3s ease-in-out infinite",
+        "breathing-glow-accent": "breathingGlowAccent 3s ease-in-out infinite",
         marquee: "marquee 40s linear infinite",
         "marquee-slow": "marquee 60s linear infinite",
       },
@@ -117,6 +131,10 @@ const config: Config = {
         breathingGlow: {
           "0%, 100%": { boxShadow: "0 0 20px rgba(58,144,112,0.15)" },
           "50%": { boxShadow: "0 0 40px rgba(58,144,112,0.35)" },
+        },
+        breathingGlowAccent: {
+          "0%, 100%": { boxShadow: "0 0 20px rgba(124,58,237,0.15)" },
+          "50%": { boxShadow: "0 0 40px rgba(124,58,237,0.35)" },
         },
         marquee: {
           from: { transform: "translateX(0)" },

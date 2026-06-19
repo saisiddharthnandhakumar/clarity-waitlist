@@ -12,6 +12,21 @@ const faqs = [
       "Yes — Clarity was built for skin like yours. Our AI is trained on diverse skin types and tones, and it's designed to identify the concerns most common in Indian skin: post-acne pigmentation that lingers for months, uneven skin tone, dark circles, and stubborn acne. These are exactly the concerns that generic skincare advice often overlooks.",
   },
   {
+    question: "Is this just another beauty filter app?",
+    answer:
+      "No. Beauty filters alter your face. Clarity analyzes it. Our AI measures acne, hyperpigmentation, texture, and barrier health using computer vision trained on dermatologist-graded datasets. We show you numbers — not a smoothed-out version of your face. If you want a filter, open Instagram. If you want to actually understand your skin, open Clarity.",
+  },
+  {
+    question: "Do I need to know skincare ingredients to use this?",
+    answer:
+      "Zero knowledge needed. You don't need to know what niacinamide does. You don't need to decode ingredient lists. Clarity explains everything in plain words — what each product does, why it's recommended for YOUR skin, and what to expect. You're not taking a skincare exam. You're taking care of your face.",
+  },
+  {
+    question: "What if my skin gets worse before it gets better?",
+    answer:
+      "This is one of the biggest reasons people quit routines too early — and we help you tell the difference. Some active ingredients (like retinoids) can cause temporary purging that looks like a breakout but is actually a normal adjustment. Our weekly tracking and Clarity Score help you distinguish purging from a genuine problem so you don't abandon a routine that's about to work. And if it IS a problem? We flag it early so you can adjust before your barrier takes real damage.",
+  },
+  {
     question: "Is this a medical diagnosis app?",
     answer:
       "No. Clarity is a skincare guidance tool — it helps you understand visible skin concerns and suggests products and routines, but it does not provide medical diagnoses or replace a dermatologist. If you have serious skin conditions, we encourage you to see a qualified professional.",
@@ -32,14 +47,9 @@ const faqs = [
       "You'll receive occasional email updates about Clarity's development progress. When early access opens, you'll be among the first invited. We may also reach out to a few waitlist members for early feedback sessions to help shape the product.",
   },
   {
-    question: "Do I need skincare knowledge to use Clarity?",
-    answer:
-      "Not at all. Clarity is designed to be beginner-friendly. You don't need to know the difference between niacinamide and retinol. Just upload a photo and we'll explain everything in plain, simple language.",
-  },
-  {
     question: "What kind of results can I expect?",
     answer:
-      "Clarity helps you understand your skin better, track visible changes over time, and get personalized product and routine guidance. We don't guarantee specific skin outcomes — everyone's skin is different. What we provide is clarity, direction, and the tools to make better skincare decisions.",
+      "Clarity helps you understand your skin better, track visible changes over time, and get personalized product and routine guidance. We don't guarantee specific skin outcomes — everyone's skin is different. What we provide is clarity, direction, and the tools to make better skincare decisions backed by data, not vibes.",
   },
 ];
 
@@ -120,7 +130,7 @@ export function FAQ() {
               FAQ
             </span>
             <h2 className="font-display text-display-lg font-semibold text-ink mt-4 mb-4 text-balance">
-              Questions you might{" "}
+              Questions you probably{" "}
               <span className="gradient-text">have</span>
             </h2>
             <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">

@@ -9,29 +9,29 @@ const steps = [
   {
     step: "01",
     icon: <Camera className="w-5 h-5" />,
-    title: "Take a photo",
+    title: "Snap a selfie",
     description:
-      "Upload one or more face photos in good lighting. No special equipment needed — just your phone camera.",
+      "No ring light. No makeup. No filter. Just your bare face in whatever lighting you've got. Our AI was trained on Indian skin tones across the Fitzpatrick spectrum.",
     detail:
-      "Our AI works with selfies taken in natural light. The more consistent your photos, the better the tracking over time.",
+      "It actually understands your pigmentation, your acne scars, your texture. Not just fair skin in studio lighting.",
   },
   {
     step: "02",
     icon: <Brain className="w-5 h-5" />,
-    title: "Get personalized insights",
+    title: "Get answers, not ads",
     description:
-      "AI identifies visible concerns — acne, texture, pigmentation, oiliness, dryness, and uneven tone.",
+      "Our AI analyzes YOUR skin — not a quiz. Not a chatbot funneling you to sponsored products. No affiliate links hiding behind \"recommendations.\"",
     detail:
-      "You'll receive a breakdown of what's affecting your skin, explained in plain language — no medical jargon.",
+      "Just science-backed insights about your specific concerns, your barrier health, and what your face is actually asking for.",
   },
   {
     step: "03",
     icon: <TrendingUp className="w-5 h-5" />,
-    title: "Track your progress",
+    title: "Watch it actually work",
     description:
-      "Monitor changes over time, see what's improving, and refine your routine based on real data.",
+      "Every week, you get an updated Clarity Score — a number that tracks real progress across acne, texture, pigmentation, and barrier health.",
     detail:
-      "Compare scans side by side. Watch your skin improve week by week with objective progress tracking.",
+      "No filters. No flattery. Just data that tells you whether your routine is working or wasting your time. Because guessing is expensive.",
   },
 ];
 
@@ -69,17 +69,16 @@ export function Solution() {
       <div className="section-container">
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-20">
-            <span className="text-xs font-semibold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full">
-              Meet Your AI Skin Coach
+            <span className="text-xs font-semibold text-accent-600 uppercase tracking-widest bg-accent-50 px-3 py-1 rounded-full">
+              Your Skin. Your Data. No BS.
             </span>
             <h2 className="font-display text-display-lg font-semibold text-ink mt-4 mb-4 text-balance">
               Understand your skin in{" "}
               <span className="gradient-text">3 simple steps</span>
             </h2>
             <p className="text-ink-500 text-lg max-w-xl mx-auto text-balance">
-              You don&apos;t need another 10-step routine from a skincare influencer.
-              You need someone to actually look at YOUR skin and tell you what
-              to do about it — in plain words.
+              Three steps. No hype. No brand deals. Just your face getting better,
+              tracked in numbers you can actually trust.
             </p>
           </div>
         </ScrollReveal>
@@ -125,9 +124,9 @@ export function Solution() {
           <div className="text-center">
             <a
               href="#waitlist"
-              className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:text-brand-700 transition-colors cursor-pointer group"
+              className="inline-flex items-center gap-2 text-accent-600 font-semibold hover:text-accent-700 transition-colors cursor-pointer group"
             >
-              Ready to start your skin journey
+              Ready to stop guessing? Join the waitlist
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </a>
           </div>

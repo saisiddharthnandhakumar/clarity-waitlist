@@ -253,11 +253,12 @@ export function Waitlist() {
                   <span className="gradient-text">waitlist</span>
                 </h2>
                 <p className="text-ink-500 leading-relaxed mb-6">
-                  Most skincare is tested on white skin in cold, dry climates.
-                  Indian skin is different — our acne scars linger for months, our
-                  pigmentation is more visible, and &quot;fairness&quot; creams aren&apos;t the
-                  answer. Clarity was built for skin like yours. Join the waitlist
-                  and help us build something that actually works for Indian faces.
+                  Most skincare products — and the &quot;advice&quot; you see online — were built
+                  for white skin in cold, dry climates. They didn&apos;t account for Indian melanin.
+                  They didn&apos;t test for Mumbai humidity, Delhi pollution, or the stubborn acne
+                  scars that linger on deeper skin tones for months. Clarity was built for YOUR
+                  skin — the skin you actually live in, in the climate you actually live in. Join
+                  the waitlist and help us build something that actually works for Indian faces.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -428,7 +429,7 @@ export function Waitlist() {
                         as="button"
                         type="submit"
                         disabled={formState === "submitting"}
-                        className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-600 text-white font-semibold text-base hover:bg-brand-700 transition-colors duration-200 shadow-lg shadow-brand-200/50 btn-glow disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer min-h-[52px] sm:min-h-0"
+                        className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-600 text-white font-semibold text-base hover:bg-accent-700 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer min-h-[52px] sm:min-h-0"
                       >
                         {formState === "submitting" ? (
                           <>
@@ -437,7 +438,7 @@ export function Waitlist() {
                           </>
                         ) : (
                           <>
-                            Secure My Spot
+                            I&apos;m In — Secure My Spot
                             <ArrowRight className="w-5 h-5" />
                           </>
                         )}

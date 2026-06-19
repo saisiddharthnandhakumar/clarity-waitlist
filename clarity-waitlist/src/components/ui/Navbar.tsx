@@ -44,7 +44,7 @@ export function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
-            ? "bg-white/80 backdrop-blur-xl border-b border-surface-100 shadow-sm"
+            ? "glass-nav"
             : "bg-transparent"
         )}
       >
@@ -88,9 +88,9 @@ export function Navbar() {
                 href="#waitlist"
                 onClick={() => handleNavClick({ preventDefault: () => {} } as any, "#waitlist")}
                 strength={4}
-                className="px-5 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-xl hover:bg-brand-700 transition-colors shadow-sm shadow-brand-200/30 cursor-pointer"
+                className="px-5 py-2.5 bg-accent-600 text-white text-sm font-semibold rounded-xl hover:bg-accent-700 transition-colors shadow-sm shadow-accent-200/30 cursor-pointer"
               >
-                Get Early Access
+                Skip the Line
               </MagneticButton>
             </div>
 
