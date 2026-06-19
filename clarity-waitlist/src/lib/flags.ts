@@ -1,4 +1,4 @@
-import { postHogAdapter } from "@flags-sdk/posthog";
+import { createPostHogAdapter } from "@flags-sdk/posthog";
 import { flag } from "flags/next";
 
 // ── Identify ─────────────────────────────────────────────────────────────────
@@ -11,6 +11,19 @@ export function identify(distinctId?: string) {
   };
 }
 
+// ── PostHog Adapter ──────────────────────────────────────────────────────────
+// Uses createPostHogAdapter so we can pass NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN
+// explicitly, avoiding a redundant NEXT_PUBLIC_POSTHOG_KEY env var.
+const adapter = createPostHogAdapter({
+  postHogKey: process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN!,
+  postHogOptions: {
+    host: process.env.NEXT_PUBLIC_POSTHOG_HOST!,
+    personalApiKey: process.env.POSTHOG_PERSONAL_API_KEY,
+    featureFlagsPollingInterval: 10_000,
+    disableGeoip: true,
+  },
+});
+
 // ── Feature Flags ────────────────────────────────────────────────────────────
 // Each flag is a typed definition backed by the PostHog adapter.
 // Usage:  const isEnabled = await myFlag();
@@ -19,6 +32,6 @@ export function identify(distinctId?: string) {
 export const myFlag = flag({
   key: "my-flag",
   defaultValue: false,
-  adapter: postHogAdapter.isFeatureEnabled(),
+  adapter: adapter.isFeatureEnabled(),
   identify: () => identify(),
 });
