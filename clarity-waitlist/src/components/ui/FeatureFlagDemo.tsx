@@ -15,7 +15,7 @@ async function FlagStatus() {
     >
       <span
         className={`inline-block w-2.5 h-2.5 rounded-full mr-2 ${
-          isEnabled ? "bg-brand-500 shadow-[0_0_8px_rgba(58,144,112,0.5)]" : "bg-ink-300"
+          isEnabled ? "bg-brand-500 shadow-[0_0_8px_rgba(90,163,211,0.5)]" : "bg-ink-300"
         }`}
       />
       Feature flag <strong className="font-semibold text-ink-900 dark:text-ink-100">&quot;my-flag&quot;</strong> is{" "}

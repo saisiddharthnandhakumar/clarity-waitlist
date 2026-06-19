@@ -10,9 +10,9 @@ type BackgroundOrbsProps = {
 
 const orbConfigs = {
   brand: [
-    { color: "rgba(58,144,112,0.10)", size: "w-[500px] h-[500px]" },
-    { color: "rgba(133,200,174,0.06)", size: "w-[400px] h-[400px]" },
-    { color: "rgba(58,144,112,0.04)", size: "w-[350px] h-[350px]" },
+    { color: "rgba(90,163,211,0.10)", size: "w-[500px] h-[500px]" },
+    { color: "rgba(158,205,231,0.06)", size: "w-[400px] h-[400px]" },
+    { color: "rgba(90,163,211,0.04)", size: "w-[350px] h-[350px]" },
   ],
   warm: [
     { color: "rgba(244,140,92,0.06)", size: "w-[500px] h-[500px]" },

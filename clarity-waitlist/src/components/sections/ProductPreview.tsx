@@ -21,7 +21,7 @@ export function ProductPreview() {
   return (
     <section id="preview" className="section-padding bg-brand-950 text-white overflow-hidden relative">
       {/* Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(58,144,112,0.15)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(90,163,211,0.15)_0%,transparent_60%)]" />
       <BackgroundOrbs variant="brand" count={2} />
 
       <div className="section-container relative z-10">

@@ -93,7 +93,7 @@ function useConfetti(canvasRef: React.RefObject<HTMLCanvasElement | null>) {
       y: canvas.height / 2,
       vx: (Math.random() - 0.5) * 8,
       vy: (Math.random() - 0.5) * 8 - 2,
-      color: Math.random() > 0.5 ? "#3a9070" : "#85c8ae",
+      color: Math.random() > 0.5 ? "#5CA3D3" : "#9ecde7",
       size: Math.random() * 4 + 2,
       life: 1,
       decay: 0.008 + Math.random() * 0.012,
@@ -441,7 +441,7 @@ export function Waitlist() {
                         as="button"
                         type="submit"
                         disabled={formState === "submitting"}
-                        className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-600 text-white font-semibold text-base hover:bg-accent-700 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer min-h-[52px] sm:min-h-0"
+                        className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-400 text-ink-950 font-semibold text-base hover:bg-accent-500 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer min-h-[52px] sm:min-h-0"
                       >
                         {formState === "submitting" ? (
                           <>

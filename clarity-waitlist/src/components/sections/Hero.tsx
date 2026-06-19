@@ -98,7 +98,7 @@ export function Hero() {
                 as="a"
                 href="#waitlist"
                 onClick={() => trackEvent("cta_click", { location: "hero_primary" })}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-600 text-white font-semibold text-base hover:bg-accent-700 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-400 text-ink-950 font-semibold text-base hover:bg-accent-500 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent cursor-pointer"
               >
                 Secure My Spot
                 <Sparkles className="w-4 h-4" />

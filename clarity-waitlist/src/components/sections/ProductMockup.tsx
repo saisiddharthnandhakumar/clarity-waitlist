@@ -243,8 +243,8 @@ export function ProductMockup() {
                         x2="100%"
                         y2="0%"
                       >
-                        <stop offset="0%" stopColor="#3a9070" />
-                        <stop offset="100%" stopColor="#85c8ae" />
+                        <stop offset="0%" stopColor="#5CA3D3" />
+                        <stop offset="100%" stopColor="#9ecde7" />
                       </linearGradient>
                     </defs>
                   </svg>

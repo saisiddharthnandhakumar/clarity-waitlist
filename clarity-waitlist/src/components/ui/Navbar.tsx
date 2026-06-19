@@ -88,7 +88,7 @@ export function Navbar() {
                 href="#waitlist"
                 onClick={() => handleNavClick({ preventDefault: () => {} } as any, "#waitlist")}
                 strength={4}
-                className="px-5 py-2.5 bg-accent-600 text-white text-sm font-semibold rounded-xl hover:bg-accent-700 transition-colors shadow-sm shadow-accent-200/30 cursor-pointer"
+                className="px-5 py-2.5 bg-accent-400 text-ink-950 text-sm font-semibold rounded-xl hover:bg-accent-500 transition-colors shadow-sm shadow-accent-200/30 cursor-pointer"
               >
                 Skip the Line
               </MagneticButton>
