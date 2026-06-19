@@ -10,6 +10,7 @@ import { Waitlist } from "@/components/sections/Waitlist";
 import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
+import { FeatureFlagDemo } from "@/components/ui/FeatureFlagDemo";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <FAQ />
       </main>
       <MobileStickyCTA />
+      <FeatureFlagDemo />
       <Footer />
     </>
   );

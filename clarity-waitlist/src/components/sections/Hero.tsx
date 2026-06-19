@@ -8,6 +8,7 @@ import { ParticleField } from "@/components/ui/ParticleField";
 import { BackgroundOrbs } from "@/components/ui/BackgroundOrbs";
 import { GradientText } from "@/components/ui/GradientText";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { trackEvent } from "@/lib/analytics";
 
 const trustSignals = [
   { icon: <Shield className="w-4 h-4" />, label: "Dermatologist-Reviewed" },
@@ -96,6 +97,7 @@ export function Hero() {
               <MagneticButton
                 as="a"
                 href="#waitlist"
+                onClick={() => trackEvent("cta_click", { location: "hero_primary" })}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-accent-600 text-white font-semibold text-base hover:bg-accent-700 transition-colors duration-200 shadow-lg shadow-accent-200/40 btn-glow-accent cursor-pointer"
               >
                 Secure My Spot
@@ -104,6 +106,7 @@ export function Hero() {
               <MagneticButton
                 as="a"
                 href="#how-it-works"
+                onClick={() => trackEvent("cta_click", { location: "hero_secondary" })}
                 strength={4}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-white border border-surface-200 text-ink font-medium text-base hover:bg-surface-50 transition-colors duration-200 cursor-pointer"
               >

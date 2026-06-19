@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { trackEvent } from "@/lib/analytics";
 
 export function MobileStickyCTA() {
   const [visible, setVisible] = useState(false);
@@ -66,6 +67,7 @@ export function MobileStickyCTA() {
             as="a"
             href="#waitlist"
             strength={2}
+            onClick={() => trackEvent("mobile_cta_clicked")}
             className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-brand-600 text-white font-semibold text-sm shadow-xl shadow-brand-300/25 hover:bg-brand-700 transition-colors duration-200 btn-glow cursor-pointer"
           >
             <Sparkles className="w-4 h-4" />

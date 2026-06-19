@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Plus } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const faqs = [
   {
@@ -118,7 +119,12 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    const isOpening = openIndex !== index;
+    setOpenIndex(isOpening ? index : null);
+    if (isOpening) {
+      const faq = faqs[index];
+      if (faq) trackEvent("faq_interaction", { question: faq.question, index });
+    }
   };
 
   return (

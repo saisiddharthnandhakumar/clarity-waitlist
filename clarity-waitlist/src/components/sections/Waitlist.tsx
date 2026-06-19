@@ -29,6 +29,7 @@ import {
   mainGoals,
 } from "@/lib/validations";
 import { trackEvent } from "@/lib/analytics";
+import posthog from "posthog-js";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -152,6 +153,8 @@ export function Waitlist() {
       if (!res.ok) {
         // 409 = already on waitlist
         if (res.status === 409) {
+          posthog.identify(data.email, { email: data.email, first_name: data.first_name });
+          trackEvent("waitlist_signup_duplicate", { email: data.email });
           toast.success(json.message);
           setFormState("success");
           return;
@@ -159,6 +162,15 @@ export function Waitlist() {
         throw new Error(json.message || "Something went wrong");
       }
 
+      posthog.identify(data.email, {
+        email: data.email,
+        first_name: data.first_name,
+        skin_concern: data.skin_concern,
+        gender: data.gender,
+        age_group: data.age_group,
+        skincare_spend: data.skincare_spend ?? "",
+        main_goal: data.main_goal ?? "",
+      });
       trackEvent("waitlist_signup", { email: data.email });
       setFormState("success");
       reset();

@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { Analytics } from "@/components/ui/Analytics";
 import { Toaster } from "@/components/ui/Toaster";
+import { PostHogProvider } from "@/components/PostHogProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -87,11 +88,13 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen antialiased">
-        {children}
-        <Toaster />
-        <Analytics />
-        <VercelAnalytics />
-        <SpeedInsights />
+        <PostHogProvider>
+          {children}
+          <Toaster />
+          <Analytics />
+          <VercelAnalytics />
+          <SpeedInsights />
+        </PostHogProvider>
       </body>
     </html>
   );

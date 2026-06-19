@@ -1,3 +1,5 @@
+import posthog from "posthog-js";
+
 type EventName =
   | "cta_click"
   | "form_start"
@@ -8,7 +10,9 @@ type EventName =
   | "scroll_depth_75"
   | "scroll_depth_100"
   | "faq_interaction"
-  | "waitlist_signup";
+  | "waitlist_signup"
+  | "waitlist_signup_duplicate"
+  | "mobile_cta_clicked";
 
 type EventProperties = Record<string, string | number | boolean>;
 
@@ -20,6 +24,10 @@ export function trackEvent(name: EventName, properties?: EventProperties) {
         name,
         properties
       );
+    }
+
+    if (typeof window !== "undefined") {
+      posthog.capture(name, properties);
     }
 
     if (process.env.NODE_ENV === "development") {

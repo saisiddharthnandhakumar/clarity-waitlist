@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { BackgroundOrbs } from "@/components/ui/BackgroundOrbs";
+import { trackEvent } from "@/lib/analytics";
 
 export function CTABanner() {
   return (
@@ -50,6 +51,7 @@ export function CTABanner() {
           <MagneticButton
             as="a"
             href="#waitlist"
+            onClick={() => trackEvent("cta_click", { location: "cta_banner" })}
             className="inline-flex items-center gap-2 px-10 py-4 bg-white text-accent-700 font-semibold text-base rounded-2xl hover:bg-accent-50 transition-colors shadow-lg shadow-accent-700/30 btn-glow-accent cursor-pointer"
           >
             I Want In — Secure My Spot
